@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pegasus X - Product Launch</title>
+  
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #0066ff;
+      --primary-dark: #2452d1;
+      --bg-light: rgba(3, 10, 21, 0); /* semi-transparent for contrast */
+      --text-dark: #222;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      color: var(--text-dark);
+      line-height: 1.6;
+      
+      /* Background image settings */
+      background-image: url('https://media.wired.com/photos/686c3d92eff4a412cfcc57fb/191:100/w_2580,c_limit/Best%20Smart%20Watches.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 0.5em;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 0.8em 1.5em;
+      background: var(--primary);
+      color: rgb(255, 255, 255);
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+    .btn-lg { font-size: 1.2em; }
+
+    .hero {
+      color: aliceblue;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2em;
+      background: var(--bg-light);
+    }
+    .hero-text { flex: 1; min-width: 280px; }
+    .hero-text span { color: white; }
+    .hero-image { flex: 1; text-align: center; }
+
+    .features, .testimonials, .pricing, .cta {
+      color: #292828;
+      padding: 2em;
+      text-align: center;
+      background: var(--bg-light);
+
+    }
+    .feature-grid, .testimonial-grid, .pricing-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5em;
+      justify-content: center;
+    }
+    .feature-card, .testimonial-card, .pricing-card {
+      background: white;
+      padding: 1em;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(1, 1, 1, 1);
+      flex: 1 1 250px;
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover { transform: translateY(-5px); }
+    .pricing-card.highlight { border: 2px solid var(--primary); }
+    .stars { color: gold; }
+
+    .cta {
+      background: var(--primary);
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background: #111;
+      color: white;
+    }
+    footer a { color: #ccc; }
+  </style>
+</head>
+
+<body>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Meet <span>Pegasus X</span></h1>
+      <p>The smartwatch redefining style, performance, and health tracking.</p>
+      <a href="#pricing" class="btn-primary">Pre-order Now</a>
+    </div>
+    <div class="hero-image">
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <h2>Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <img src="heartcheck black.png" alt="Health Check icon">
+        <h3>24/7 Health Monitoring</h3>
+        <p>Track heart rate, sleep, and stress levels effortlessly.</p>
+      </div>
+      <div class="feature-card">
+        <img src="bolt black.png" alt="Battery icon">
+        <h3>Ultra-long Battery</h3>
+        <p>Enjoy up to 14 days of battery life on a single charge.</p>
+      </div>
+      <div class="feature-card">
+        <img src="black.png" alt="Water resistant icon">
+        <h3>Water & Dust Resistant</h3>
+        <p>Perfect for workouts, adventures, and everyday wear.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p>"The design is sleek, and the health features are top-notch!"</p>
+        <div class="stars">★★★★★</div>
+        <span>– Aaron Thomas</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"Battery life is insane! I charge it once every two weeks."</p>
+        <div class="stars">★★★★★</div>
+        <span>– Zahra R</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="pricing">
+    <h2>Pricing Plans</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>Basic</h3>
+        <p class="price">₹15,000</p>
+        <ul>
+          <li>Standard Tracking</li>
+          <li>7-Day Battery</li>
+          <li>1-Year Warranty</li>
+        </ul>
+        <a href="#" class="btn-primary">Choose Plan</a>
+      </div>
+      <div class="pricing-card highlight">
+        <h3>Pro</h3>
+        <p class="price">₹21,000</p>
+        <ul>
+          <li>Advanced Health Tracking</li>
+          <li>14-Day Battery</li>
+          <li>Priority Support</li
